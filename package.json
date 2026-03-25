@@ -1,0 +1,26 @@
+{
+  "name": "voxbar-ob",
+  "version": "0.1.0",
+  "description": "Desktop-only Obsidian plugin that sends selected text, notes, or source URLs to VoxBar for local TTS playback.",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "tts",
+    "voxbar"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.25.0",
+    "obsidian": "^1.8.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.2"
+  }
+}
+

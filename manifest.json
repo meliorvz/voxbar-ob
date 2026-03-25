@@ -1,0 +1,10 @@
+{
+  "id": "voxbar-ob",
+  "name": "VoxBar for Obsidian",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Read the current selection, note, or article source URL with VoxBar.",
+  "author": "VoxBar Maintainer",
+  "isDesktopOnly": true
+}
+
