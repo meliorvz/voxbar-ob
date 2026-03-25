@@ -1,6 +1,6 @@
 # VoxBar for Obsidian
 
-Desktop-only Obsidian plugin that sends the current selection, the active note, or a frontmatter source URL to local VoxBar for text-to-speech playback.
+Read any note, selection, or source URL aloud with VoxBar, a local macOS text-to-speech app.
 
 ## What It Does
 
@@ -20,11 +20,11 @@ Desktop-only Obsidian plugin that sends the current selection, the active note, 
   - wikilinks and embeds
   - block references
 
-VoxBar still performs its own markdown cleanup after that, so the plugin stays thin.
+VoxBar performs the final cleanup and synthesis, so the plugin stays thin.
 
 ## How It Works
 
-The plugin writes a small request JSON file into VoxBar's local inbox:
+The plugin writes a request JSON file into VoxBar's local inbox:
 
 ```bash
 ~/Library/Application Support/VoxBar/Inbox/
@@ -77,3 +77,4 @@ The target folder should be:
 - This plugin is desktop-only because it relies on launching a local macOS app.
 - It assumes VoxBar is already set up and working locally.
 - It uses VoxBar's app inbox, so generated runs appear inside the VoxBar app itself.
+- If you want to try VoxBar first, install the macOS app from the VoxBar repo and point this plugin at that app bundle in settings.
